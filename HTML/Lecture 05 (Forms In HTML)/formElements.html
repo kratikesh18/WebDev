@@ -8,25 +8,30 @@
 </head>
 <body>
     <form >
-        <label for="datePicker">Choose a date: </label>
-        <input type="date" id="datePicker">
+        <fieldset>
+            <legend>HTML Dummy Form</legend>
+            <label for="datePicker">Choose a date: </label>
+            <input type="date" id="datePicker">
+    
+            <br/>
+            <br/>
+    
+            <label for="Products">Choose Your Operating System: </label>
+            <select name="list1" id="Products">
+                <option value="windows">Windows</option>
+                <option value="unix">Linux</option>
+                <option value="mac">MacOs</option>
+            </select>
+            <br/>
+            <br/>
+            <button>Apply</button>
+            <br/>
+            <br/>
+            <!-- creating textARea -->
+            <textarea name="textarea1" id="textarea" placeholder="Enter your FeedBack..." cols="30" rows="10"></textarea>
+        
+        </fieldset>
 
-        <br/>
-        <br/>
-
-        <label for="Products">Choose Your Operating System: </label>
-        <select name="list1" id="Products">
-            <option value="windows">Windows</option>
-            <option value="unix">Linux</option>
-            <option value="mac">MacOs</option>
-        </select>
-        <br/>
-        <br/>
-        <button>Apply</button>
-        <br/>
-        <br/>
-        <!-- creating textARea -->
-        <textarea name="textarea1" id="textarea" placeholder="Enter your FeedBack..." cols="30" rows="10"></textarea>
     </form>
 </body>
 </html>

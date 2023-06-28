@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;           /*shrink the content inside the box but size remain same*/
+        }
+        .contaioner{
+            border:1px solid black;
+            height: 100px;
+            width: 100px ;
+
+        }
+        .container2{
+            border:1px solid red ;
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            margin :5px;        /*dont conunt in the size of the box  */
+        }
+        span{
+                /* they are inline elements not obey the height and width till transformed */
+            border:2px solid grey;
+            height: 50px;
+            width: 50px;
+            /* obeys height and width tkes all widh */
+            /* display: block; */
+            /* act as a inline with obeying height and widht */
+            display: inline-block;
+
+
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- block elemtnes ex: div , p , h  -->
+    <div class="contaioner">
+        Hello fucks
+    </div>
+    <div class="container2">
+        Hello ducks
+    </div>
+
+    <!-- some inline elemtnes ex : a , span-->
+    <span>Hey</span>
+    <span>There</span>
+    <span>I'm</span>
+    <span>Span</span>
+    <span>an</span>
+    <span>Inline</span>
+    <span>Element</span>
+
+    
+
+</body>
+</html>

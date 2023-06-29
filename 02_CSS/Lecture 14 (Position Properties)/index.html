@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            position: relative;     /*relatable on the window elements can be moved and gap maintained */
+            background-color: red;
+            height: 5000px;
+        }
+        img{
+            margin: 10px;
+        }
+        .img1{
+            top: 300px; /*will not affect because default it is static */
+        }
+        .img2{
+            position: absolute;     /*no gap maintained filled  && realatbale on  parent */
+            top: 100px;
+            left: 200px;
+        }
+        
+        
+        .img4{
+        
+            position: sticky;       /* this will only stiked to the parent container */
+                left: 300px;
+                top: 50px;
+
+        }
+        .img5{
+          
+            position: fixed;        /*this will fixed to the window */
+            top: 73vh;
+            left: 77vw;
+        }
+        .box{
+            height: 3000px;
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="photo1.jpg" alt="photo1" height="300px" width="400px" class="img1"/>
+
+        <img src="photo2.jpg" alt="photo1" height="300px" width="400px" class="img2"/>
+
+        <img src="photo3.jpg" alt="photo1" height="300px" width="400px" class="img3"/>
+
+        <img src="photo4.jpg" alt="photo1" height="300px" width="400px" class="img4"/>
+
+        <img src="photo1.jpg" alt="photo1" height="300px" width="400px" class="img5"/>
+    </div>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        .parent1{
+            width: 50%;
+            border: 1px solid red;
+            background-color: azure;
+        }
+
+        .child1{
+            width: 50%;
+            border: 1px solid green;
+            background-color: purple;
+            color: white;
+        }
+        .viewporthHeightWidth{
+            height: 100vh;
+            width: 50vw;
+            border: 2px solid black  ;
+            background-color: beige;
+
+        }
+    </style>
+</head>
+
+    
+<body>
+    <!-- stydying % -->
+    <div class="parent1">
+        <div class="child1">
+
+            This is Heading
+        </div>
+    </div>
+
+    <!-- viewport height and viewport width -->
+    <div class="viewporthHeightWidth">
+        this is for height
+    </div>
+
+
+    <!-- studying rem and em -->
+    <div class="parent2" style="font-size: 10px;">
+        this is 10px font 
+        <div class="child2" style="font-size: 2em; ">
+            this is 20px because 2*inheritence = 2*10px = 20px
+        </div>
+    </div>
+
+    <!-- learning the rem root element -->
+    <div class="parent3" style="border:2px solid red; font-size: 2rem;">
+        this is 32px because 2*16px = 32px
+        <div class="child3" style="font-size:1.5rem;">
+            this is 24px because 1.5*16px = 24px    
+        </div>
+    </div>
+
+</body>
+</html>

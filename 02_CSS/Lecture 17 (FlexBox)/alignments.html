@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex alingments</title>
+    <style>
+     .container{
+            background-color: wheat;
+            border: 4px solid red; 
+            display: flex ;
+            /* FOR DIRECTION ROW */
+            /* height: 60VH; */ 
+            /* FOR DIRECTION COLUMN */
+            height: 110vh;
+
+            display: flex;
+            flex-direction: row;
+            /* ALIGNMENTS */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: start; */
+            /* justify-content: flex-end; */
+            /* SPACE  */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+
+
+
+            /* flexwrap   :*/
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* align-content:  */
+            align-content:start ;
+                }
+        .box{
+            color:white;
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            margin: 3px;
+        }
+
+        #box1{
+            background-color: violet;
+            order: 10;
+        }
+        #box2{
+            background-color: indigo;
+            flex-basis:10em ;
+            
+        }
+        #box3{
+            background-color: red;
+            flex-shrink: 4;     /*flex-wrap should be nowrap to use this property fully */
+            align-self: flex-end;
+        }   
+
+        #box4{
+            background-color: yellow;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Justify Content</h1>
+    <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    </div>
+</body>
+</html>

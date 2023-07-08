@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            background-color:wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+        }
+        .box{
+            border: 2px solid black;
+            margin: 5px;
+            height: 150px;
+            width: 150px;
+        }
+        #item1{
+            background-color: red;
+        }
+        #item2{
+            background-color: orange;
+        }
+        #item3{
+            background-color: yellow;
+        }
+        #item4{
+            background-color: rgb(48, 187, 48);
+        }
+
+
+        /* @media (min-width:0px) and (max-width: 1280px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                height: inherit;
+                width: inherit;
+                align-items: center;
+            }
+        } */
+
+        /* can also written as  */
+        @media (max-width:1280px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                height: inherit;
+                width: inherit;
+                align-items: center;
+            }
+        }
+        @media (width > 1280) {
+                
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1"></div>
+        <div class="box" id="item2"></div>
+        <div class="box" id="item3"></div>
+        <div class="box" id="item4"></div>
+    </div>
+</body>
+</html>

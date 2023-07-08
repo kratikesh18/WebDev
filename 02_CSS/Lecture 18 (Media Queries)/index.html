@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+        }
+        
+        
+        
+                @media (min-width:400px) {
+                    .box{
+                        background-color:violet;
+                    }
+                }
+
+
+                @media (min-width:500px) and (max-width:700px) {
+                    .box{
+                        background-color:grey;
+                        color: white;
+                    }
+                }
+                
+              
+        </style>
+</head>
+<body>
+    <div class="box">
+        Hey There
+    </div>
+</body>
+</html>

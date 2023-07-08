@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color:wheat;
+            display: flex;
+            /* height: 50vh; */
+            justify-content: center;
+            border: 2px solid black;
+        }
+        .Text-side{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            margin: 10px;
+            height: 300px;
+            /* border:2px solid black; */
+            justify-content: center;
+        }
+        .text1{
+            border:2px solid red;
+            background-color:brown;
+            color: wheat ;
+            text-align: center;
+        
+        }
+        .text2{
+            border: 2px solid orange;
+            background-color: violet;
+            color: black;
+            text-align: center;
+            
+        }
+        .img-side{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height: inherit;
+            width: 400px;
+        }
+
+        @media (max-width:615px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+    
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <h1>This is the Example of Responsiveness</h1>
+        <p>Below container will change the diretion and adapt the resolution on the devices having width <b>less than 615px</b> </p>
+    <div class="container">
+        <div class="Text-side">
+            <h2 class="text1">MostlySane</p>
+            <h2 class="text2">Prajakta Koli</p>
+        </div>
+
+        <div class="img-side">    
+            <img src="image1.jpg" alt="myLove" class="img1">
+
+        </div>
+    </div>
+</body>
+</html>

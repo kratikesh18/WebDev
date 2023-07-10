@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball GAme</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-align: center;
+            text-shadow: -10px 15px 5px black;
+        }
+        .gameContainer{
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+      .mainContainer {
+        margin: 10px;
+        height: 80vh;
+        width: 70vw;
+        background-image: url(background.jpg);
+        object-fit: fill;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+      }
+      .slider1 {
+        margin-left: 10px;
+        margin-top: 10px;
+        height: 10vh;
+        width: 20vw;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(252, 70, 107, 1) 100%
+        );
+        border-radius: 10px;
+        position: relative;
+        animation: MoveRight 4s cubic-bezier(0, -0.01, 0.54, 0.44) 0s infinite
+          alternate none;
+      }
+
+      .slider2 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        height: 10vh;
+        width: 20vw;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(252, 70, 107, 1) 100%
+        );
+        position: relative;
+        border-radius: 10px;
+        animation: MoveLeft 4s ease-in-out 0s infinite
+          alternate-reverse none;
+      }
+      .ball {
+        position: relative;
+
+        height: 10%;
+        width: 5%;
+        /* background-color: rgb(156, 156, 156); */
+        /* border-radius: 100px; */
+        animation: BallMovement 4s linear 0s infinite alternate none;
+      }
+
+      @keyframes MoveRight {
+        from {
+          left: 0;
+        }
+        to {
+          left: 70%;
+        }
+      }
+
+      @keyframes MoveLeft {
+        from {
+          left: 70%;
+        }
+        to {
+          left: 0;
+        }
+      }
+
+      @keyframes BallMovement {
+        0% {
+          top: -32%;
+          left: 0;
+        }
+        25% {
+          top: 33.5%;
+          left: 20%;
+        }
+
+        50% {
+          top: -32%;
+          left: 40%;
+        }
+        75% {
+          top: 33.5%;
+          left: 80%;
+        }
+        100% {
+          top: -32%;
+          left: 96%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gameContainer">
+            <h2> Animated Game</h2>
+            <p>This game is made by using <b>CSS Animations</b> so <b>"Can not be Played"</b> </p>
+        <div class="mainContainer">
+            <div class="slider1"></div>
+            <img src="silver-ball.png" alt="" class="ball" />
+            <div class="slider2"></div>
+          </div>
+
+    </div>
+  </body>
+</html>

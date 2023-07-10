@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 99vw;
+            height: 96vh;
+            background-color: violet;
+            border: 2px solid grey;
+
+        }
+        h1{
+            text-align: center;
+            text-shadow: -10px 20px 5px black;
+        }
+        .boxcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+
+        }
+        .boat{
+            height: 300px;
+            width: 70%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction:  column-reverse;
+            border-radius: 5px;
+
+
+
+        }
+        
+    .mainboat{
+        height:21%;
+        width: 15%;
+        border-radius: 5px ;
+        position: relative;
+        /* animation: NowFloat 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite ;    */
+        animation-name: NowFloat;
+        animation-duration: 6s ;
+        animation-delay: 1s;
+        animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    
+        
+                    
+        }
+        .water{
+        
+            height: 50%;
+            width: 100%;
+            background-color: rgb(30, 98, 153);
+        }
+
+        @keyframes NowFloat {
+            from{
+                top: 0 ;
+                left: 0;
+            }
+            to{
+                top :0;
+                left: 85%;
+            }
+        }   
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Animation</h1>
+
+        <div class="boxcontainer">
+
+            <div class="boat">
+                <div class="water"></div>
+                <img src="pngimg.com - boat_PNG7.png" alt="" class="mainboat">
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

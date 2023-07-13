@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animations in CSS</title>
 
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 99vw;
+        height: 96vh;
+        background: rgb(2, 0, 36);
 
-        *{
-            box-sizing: border-box;
-
-        }
-        .container{
-            width: 99vw;
-            height: 96vh;
-            background-color: violet;
-            border: 2px solid grey;
-
-        }
-        h1{
-            text-align: center;
-            text-shadow: -10px 20px 5px black;
-        }
-        .boxcontainer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10%;
-
-        }
-        .boat{
-            height: 300px;
-            width: 70%;
-            border: 2px solid black;
-            display: flex;
-            flex-direction:  column-reverse;
-            border-radius: 5px;
-
-
-
-        }
+        background: radial-gradient(
+          circle,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(255, 0, 202, 1) 49%,
+          rgba(9, 9, 121, 1) 100%
+        );
         
-    .mainboat{
-        height:21%;
+        border: 2px solid grey;
+      }
+      h1 {
+        text-align: center;
+        text-shadow: -10px 20px 5px black;
+      }
+      .boxcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+      }
+      .boat {
+        height: 300px;
+        width: 70%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 5px;
+      }
+
+      .mainboat {
+        height: 21%;
         width: 15%;
-        border-radius: 5px ;
+        border-radius: 5px;
         position: relative;
         /* animation: NowFloat 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite ;    */
         animation-name: NowFloat;
-        animation-duration: 6s ;
+        animation-duration: 6s;
         animation-delay: 1s;
-        animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-iteration-count: infinite;
         animation-direction: alternate;
-    
-        
-                    
+      }
+      .water {
+        height: 50%;
+        width: 100%;
+        background: rgb(1, 247, 210);
+        background: linear-gradient(
+          324deg,
+          rgba(1, 247, 210, 1) 9%,
+          rgba(69, 70, 252, 1) 96%
+        );
+      }
+
+      @keyframes NowFloat {
+        from {
+          top: 0;
+          left: 0;
         }
-        .water{
-        
-            height: 50%;
-            width: 100%;
-            background-color: rgb(30, 98, 153);
+        to {
+          top: 0;
+          left: 85%;
         }
+      }
 
-        @keyframes NowFloat {
-            from{
-                top: 0 ;
-                left: 0;
-            }
-            to{
-                top :0;
-                left: 85%;
-            }
-        }   
-
-
+      @media (max-width: 375px) {
+        .mainboat {
+          height: 8%;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>CSS Animation</h1>
+      <h1>CSS Animation</h1>
 
-        <div class="boxcontainer">
-
-            <div class="boat">
-                <div class="water"></div>
-                <img src="pngimg.com - boat_PNG7.png" alt="" class="mainboat">
-
-
-            </div>
+      <div class="boxcontainer">
+        <div class="boat">
+          <div class="water"></div>
+          <img src="pngimg.com - boat_PNG7.png" alt="" class="mainboat" />
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

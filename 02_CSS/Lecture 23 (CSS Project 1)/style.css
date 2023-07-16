@@ -1,0 +1,180 @@
+/* imports */
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling fonts */
+
+/* styling for navbar */
+.navContainer {
+  min-height: 3rem;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 6%,
+    rgba(82, 4, 4, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 100%;
+}
+.logo{
+    font-size:1.4em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#Nav-items-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: white;
+  font-size: 1.4rem;
+  
+}
+
+#nav-routers {
+  display: flex;
+  gap: 2em;
+}
+
+#nav-routers a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+}
+
+a:hover{
+    font-size:1.05em;
+}
+
+/* main item contaienrs Styling */
+main {
+  display: flex;
+  justify-content: center;
+  background: rgb(19, 13, 124);
+  background: linear-gradient(
+    124deg,
+    rgba(19, 13, 124, 1) 0%,
+    rgba(149, 55, 55, 1) 100%
+  );
+  
+}
+.main-Item-Container {
+  height: 100%;
+  width:80%;
+  background-color: grey;
+  color: white; 
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  box-shadow: 0px 0px 40px black;
+  padding-top: 2vh;
+  padding-bottom:2vh;
+  
+  
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 61vh;
+  width: 95%;
+
+  box-shadow: 0px 0px 10px black;
+  /* border: 2px solid pink;     */
+}
+.items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 1rem; */
+  /* border: 2px solid red; */
+  width: 100%;
+  min-height: auto;
+}
+
+.leftBox {
+  border: 2px solid white;
+  position: relative;
+  width: auto;
+  height: 21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 6px 10px black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+}
+.leftBox:hover {
+  transform: scale(1.03);
+}
+.overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.582);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+.rightBox {
+  border: 2px solid black;
+  min-height: 21em;
+  display: flex;
+  background-color: rgba(53, 51, 51, 0.534);
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;   
+}
+
+.leftBox:hover .overlay {
+  opacity: 1;
+}
+img {
+  height: 100%;
+  width: 13rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* footer Stylng */
+footer {
+  width: 100%;
+  min-height: 10vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 6%,
+    rgba(82, 4, 4, 1) 100%
+  );
+  display: flex;
+  justify-content: cente;
+  align-items: center;
+}
+
+.footer-Container {
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

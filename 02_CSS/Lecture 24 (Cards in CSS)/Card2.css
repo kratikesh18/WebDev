@@ -97,7 +97,11 @@
     .Card{
         width: 85%;
     }
-    .left-box{width:67%;}
+
+    .left-box{
+        width:67%;
+    }
+    
     #left2 p{
         
         font-size:small;

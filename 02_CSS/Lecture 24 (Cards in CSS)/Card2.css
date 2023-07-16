@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* styiling container */
+.Container{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(181,1,247);
+    background: linear-gradient(324deg, rgba(181,1,247,1) 9%, rgba(252,69,69,1) 96%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Card{
+    height: 29.8rem ;
+    width: 19rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    box-shadow: 4px 7px 20px black;
+}
+.Card img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height:27%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Card p{
+    text-align: center;
+}
+.Amount-box{
+    height: 9%;
+    width: 90%;
+    margin-top: 5px;
+    background-color: aqua;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.1rem;
+
+
+}
+
+.left-box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    justify-content: space-around   ;
+    width: 60%;
+    padding: 2%;
+
+}
+#left1 img{
+    height: 2.18rem;
+    
+}
+
+#left2 p{
+    font-size: small;
+    font-weight: bold;
+
+}
+
+#Payment-Button{
+    height: 9%;
+    width: 90%;
+
+    margin-top: 5%;
+    background-color: rgb(23, 23, 134);    
+    color: white;
+    border-radius: 7px;
+    box-shadow: 3px 10px 6px grey;
+}
+
+#Cancel{
+    margin-top: 5%;
+    text-decoration: none;
+    font-weight:600;
+}
+
+
+/* Media queries */
+@media (max-width:250px) {
+    .Card{
+        width: 85%;
+    }
+    .left-box{width:67%;}
+    #left2 p{
+        
+        font-size:small;
+        font-weight: normal;
+    }
+}

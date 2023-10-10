@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    background-color: rgb(27, 19, 19);
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    gap:1rem;
+    display: grid;
+    /* creating grid 2diementional */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,180px);
+    
+    /* there are some properties for container of grid */
+    /* justify-items: center; */
+    /* justify-items: end; */
+    /* justify-items: stretch; */
+    /* applies on x-axis */
+
+    /* applies on y-axis */
+    /* align-items: end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+
+
+    /* to bypass the all longcuts here is a shorthand */
+    place-items: center;
+    /* place-items: end; */
+
+
+
+
+}
+
+.items{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border: 2px solid pink;   
+
+    /* there are some properties for elements of grid container */
+    /* applies in x-axis */
+    /* justify-self: center; */
+    /* justify-self: end; */
+    /* justify-self: stretch; */
+
+    /* applies in y-axis */
+    /* align-self: center; */
+    /* align-self: flex-end; */
+    /* align-self: stretch; */
+    
+}
+

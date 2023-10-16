@@ -42,28 +42,30 @@ a{
 .main_container{
     display: grid;
     gap: 1.2rem; 
-    grid-template-columns: repeat(1,1fr);
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px,300px));
+    justify-content: center;
     max-width: 66vw;
     margin: 0 auto;
     
 }
 /* the design doesnt look responsive  */
 /* so adding  media queries */
-@media (min-width:400px) {
+/* @media (min-width:928px) {
     .main_container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width:800px) {
+@media (min-width:1323px) {
     .main_container{
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (min-width:1000px) {
+@media (min-width:1654px) {
     .main_container{
         grid-template-columns: repeat(4, 1fr);
     }
-}
+} */
 .card_container{
     overflow: hidden;   
     display: flex;
@@ -76,11 +78,11 @@ a{
 .img_container{
     position: relative;
     overflow: hidden;
-    height: 7rem;
+    height: 17rem;
 }
 
 @media (min-width: 768px) {
-    .image_container{
+    .img_container{
             height: 12rem;
     }
 }

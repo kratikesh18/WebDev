@@ -36,3 +36,21 @@ body{
 #section2{grid-area: section2;}
 #section3{grid-area: section3;}
 #footer{grid-area: footer;}
+
+
+/* Styling container 2 */
+.container2{
+    display: grid;
+    margin-top: 10%;
+    padding:5rem;
+    gap: 1rem;
+    justify-content: center;
+    background-color: rgb(157, 32, 32);
+
+    /* no need for media queries anymore */
+    grid-template-columns: repeat(auto-fit , minmax(6.25rem, 39.375rem));
+}
+.items2{
+    background-color: pink;
+    padding: 1rem;
+}

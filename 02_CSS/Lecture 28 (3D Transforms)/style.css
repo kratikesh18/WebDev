@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    padding-top: 3rem;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px , 300px   ));
+    padding: 4rem;
+    gap: 5rem;
+    justify-content: center;
+}
+.itmes{
+    background-color: pink;
+    box-shadow: 5px 5px 20px black;
+    /* color:white; */
+    height:12.5rem;
+    width: 12.5rem;
+    transition: transform 1.6s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itmes:hover{
+    color: white;
+}
+#rotate_X:hover{
+    transform: rotateX(45deg);
+    background-color: rgb(212, 124, 124);
+}
+
+#rotate_Y:hover{
+    transform: rotateY(45deg);
+    background-color: rgb(212, 124, 124);
+    
+}
+
+#rotate_Z:hover{
+    transform: rotateZ(45deg);
+    background-color: rgb(212, 124, 124);
+}
+
+#translate_X:hover{
+    /* transform: translateX(100px); */
+    transform: translateX(-50px);
+    background-color: rgb(211, 46, 73);
+}
+
+#translate_Y:hover{
+    /* transform: translateY(100px); */
+    transform: translateY(-50px);
+    background-color: rgb(212, 53, 80);
+}
+
+#translate_Z:hover{
+    transform:perspective(700px) translateZ(100px);
+    /* transform:perspective(700px) translateZ(-100px); */
+    background-color: rgb(212, 53, 80);
+}
+
+#scale_X:hover{
+    transform: scaleX(1.5);
+    background-color: rgb(157, 66, 241);
+}
+
+#scale_Y:hover{
+    transform: scaleY(1.3);
+    background-color: rgb(156, 60, 245);
+}
+
+#scale_Z:hover{
+    transform: perspective(450px)  scaleZ(3.3) rotateX(45deg);
+    background-color: rgb(143, 56, 225);
+}
